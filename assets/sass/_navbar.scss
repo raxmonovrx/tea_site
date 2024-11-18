@@ -7,10 +7,8 @@
     height: 54px;
     padding: 0 20px;
 
-
     background-color: #fff;
-    border-radius:6px 6px 0 0;
-
+    border-radius: 6px 6px 0 0;
 }
 
 .nav__links {
@@ -22,6 +20,10 @@
         color: #000;
         font-size: 15px;
         letter-spacing: -0.1px;
+
+        &:hover {
+            color: #33c445;
+        }
     }
 
     .nav__link-span {
