@@ -11,7 +11,8 @@
     background-color: #fff;
     border-radius: 0 0 6px 6px;
 
-    .search-icon_m, .menu-icon_m {
+    .search-icon_m,
+    .menu-icon_m {
         display: none;
     }
 }
@@ -104,6 +105,7 @@
         &:hover {
             i,
             span {
+                overflow: hidden;
                 color: #33c445;
             }
         }

@@ -34,7 +34,6 @@
 .seo__card_box {
     flex: 0 0 auto;
     width: 350px;
-    height: auto;
     gap: 2px;
     border-radius: 6px;
     background-color: #fff;
@@ -44,7 +43,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         .seo__dec-link {
             opacity: 0.5;
         }
@@ -59,14 +57,18 @@
 
 .seo__card_box-img {
     overflow: hidden;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 200px;
 
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
         transition: transform 0.3s ease;
+        transform-origin: center;
     }
 }
-
 .seo__card_box:hover .seo__card_box-img img {
     transform: scale(1.05);
 }
@@ -74,7 +76,6 @@
 .seo__card_box-description {
     padding: 10px;
 }
-
 .seo__dec-date {
     font-size: 12px;
     color: #969696;
