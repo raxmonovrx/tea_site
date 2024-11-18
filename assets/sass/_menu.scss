@@ -1,0 +1,121 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    width: 100%;
+    height: calc(137px - 54px - 2px);
+    padding: 0 20px;
+
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+
+    .search-icon_m, .menu-icon_m {
+        display: none;
+    }
+}
+
+.menu__logo-text {
+    font-family: Unbounded;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.07em;
+    color: #585757;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: clamp(200px, 70%, 540px);
+    height: 48px;
+    padding: 5px 10px;
+    border: 2px solid #33c445;
+    border-radius: 6px;
+    background-color: #fff;
+
+    .search-icon {
+        margin-right: 8px;
+        color: #585757;
+    }
+
+    .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .search-input::placeholder {
+        color: #e4e4e4;
+    }
+
+    .menu-icon {
+        margin-left: 8px;
+        color: #585757;
+
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 5px;
+        border: 2px solid #33c445;
+
+        border-radius: 6px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Kenglikni search box bilan tenglashtiramiz */
+        z-index: 10;
+
+        a {
+            display: block;
+            padding: 8px;
+            color: #333;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}
+
+.menu__icons {
+    display: flex;
+    gap: 10px;
+
+    .menu__icon {
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            i,
+            span {
+                color: #33c445;
+            }
+        }
+
+        i {
+            font-size: 24px;
+            color: #585757;
+        }
+
+        span {
+            font-size: 13px;
+            color: #585757;
+        }
+    }
+}

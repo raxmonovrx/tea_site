@@ -1,0 +1,36 @@
+.banner__section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner__boxs {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.banner {
+    background: url("/assets/imgs/banner.svg") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    aspect-ratio: 1110 / 400; 
+    border-radius: 6px;
+
+    .banner__title {
+        width: 100%;
+        max-width: 582px;
+        height: auto;
+
+        font-size: clamp(
+            24px,
+            5vw,
+            80px
+        ); 
+        font-weight: 600;
+        text-align: center;
+    }
+}

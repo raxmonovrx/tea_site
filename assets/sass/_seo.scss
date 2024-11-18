@@ -1,0 +1,137 @@
+.seo-news {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.seo__title {
+    font-size: clamp(18px, 5vw, 32px);
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+.seo__card_boxes {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: grab;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.seo__card_box {
+    flex: 0 0 auto;
+    width: 350px;
+    height: auto;
+    gap: 2px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        .seo__dec-link {
+            opacity: 0.5;
+        }
+        .seo__dec-link img {
+            transform: translateX(5px);
+        }
+    }
+    &::selection {
+        background-color: transparent;
+    }
+}
+
+.seo__card_box-img {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+}
+
+.seo__card_box:hover .seo__card_box-img img {
+    transform: scale(1.05);
+}
+
+.seo__card_box-description {
+    padding: 10px;
+}
+
+.seo__dec-date {
+    font-size: 12px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+
+.seo__dec-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.seo__dec-text {
+    font-size: 15px;
+    color: #585757;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.seo__dec-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c1c1c;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        color: #0056b3;
+    }
+
+    img {
+        width: 15px;
+        transition: transform 0.3s ease;
+    }
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    .seo__card_box {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seo__card_box {
+        width: 250px;
+    }
+}

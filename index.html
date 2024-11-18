@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <link rel="stylesheet" href="/assets/sass/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- MARK:HEADER -->
+        <header class="header">
+            <!-- MARK:NAVBAR -->
+            <nav class="navbar">
+                <div class="nav__links">
+                    <a href="#">О проекте</a>
+                    <a href="#">Доставка и оплата </a>
+                    <span class="nav__link-span">
+                        <a href="#">Отзывы</a>
+                        <span class="fedback__count"> 1253 </span>
+                    </span>
+                    <a href="#">Статьи</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="nav__socials">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </nav>
+            <!-- MARK: MENU -->
+            <div class="menu">
+                <div class="menu__logo">
+                    <a href="#" class="menu__logo-text">ЧАЙНЫЙ ДОМ</a>
+                </div>
+
+                <div class="search-box">
+                    <span class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input
+                        type="text"
+                        placeholder="Найти любимый вкус"
+                        class="search-input"
+                    />
+                    <span class="menu-icon" onclick="toggleDropdown()">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+
+                <div class="menu__icons">
+                    <a class="search-icon_m search__icon_m">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="menu__icon meadia_none">
+                        <i class="fa-solid fa-box"></i>
+                        <span>Заказы</span>
+                    </a>
+                    <a href="#" class="menu__icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Избр.</span>
+                    </a>
+                    <a href="#" class="menu__icon">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Войти</span>
+                    </a>
+                    <a href="#" class="menu__icon meadia_none">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Корзина</span>
+                    </a>
+                    <a class="menu-icon_m menu__bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- MARK: BANNER -->
+        <section class="banner__section">
+            <div class="banner__boxs">
+                <div class="banner">
+                    <h1 class="banner__title">Акционный баннер</h1>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="catalog__title">
+                <h2>Каталог</h2>
+            </div>
+            <div class="catalog__boxs">
+                <div class="catalog__box">
+                    <span>Черный чай</span>
+                    <img src="/assets/imgs/catalog_1.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <span>Зеленый чай</span>
+                    <img src="/assets/imgs/catalog_2.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <span>Улун</span>
+                    <img src="/assets/imgs/catalog_3.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <span>Фруктовый чай</span>
+                    <img src="/assets/imgs/catalog_4.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <div>
+                        <span>Черный чай </span>
+                        <span class="chay__tip">ароматизированный</span>
+                    </div>
+                    <img src="/assets/imgs/catalog_5.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <div>
+                        <span>Зеленый чай </span>
+                        <span class="chay__tip">ароматизированный</span>
+                    </div>
+                    <img src="/assets/imgs/catalog_2.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <span>Пуэр</span>
+                    <img src="/assets/imgs/catalog_6.svg" alt="Chay" />
+                </div>
+                <div class="catalog__box">
+                    <span>Добавки</span>
+                    <img src="/assets/imgs/catalog_2.svg" alt="Chay" />
+                </div>
+            </div>
+        </section>
+        <!-- MARK: NEWS -->
+        <section class="news">
+            <div class="news__title">
+                <h2>Новинки</h2>
+            </div>
+            <div class="news__boxs">
+                <div class="news__box">
+                    <div class="news__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="news__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="news__box-description">
+                        <div class="new__box_product-price">
+                            <span class="original-price">1 450 ₽</span>
+                            <span class="discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="news__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="news__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="news__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="news__box-description">
+                        <div class="new__box_product-price">
+                            <span class="original-price">1 450 ₽</span>
+                            <span class="discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="news__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="news__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="news__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="news__box-description">
+                        <div class="new__box_product-price">
+                            <span class="original-price">1 450 ₽</span>
+                            <span class="discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="news__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="news__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__box">
+                    <div class="news__box-rate">
+                        <span class="popular">Популярный</span>
+                        <span class="like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="news__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="news__box-description">
+                        <div class="new__box_product-price">
+                            <span class="original-price">1 450 ₽</span>
+                            <span class="discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="news__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="news__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="rating">
+                            <div class="stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(132)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MARK: POPULAR -->
+        <section class="popular__section">
+            <div class="popular__title">
+                <h2>Популярное</h2>
+            </div>
+            <div class="popular__boxs">
+                <div class="popular__box">
+                    <div class="popular__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="pop_like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="popular__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="popular__box-description">
+                        <div class="popular__box_product-price">
+                            <span class="pop_original-price">1 450 ₽</span>
+                            <span class="pop_discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="popular__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="popular__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="pop_rating">
+                            <div class="pop_stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular__box">
+                    <div class="popular__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="pop_like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="popular__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="popular__box-description">
+                        <div class="popular__box_product-price">
+                            <span class="pop_original-price">1 450 ₽</span>
+                            <span class="pop_discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="popular__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="popular__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="pop_rating">
+                            <div class="pop_stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular__box">
+                    <div class="popular__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="pop_like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="popular__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="popular__box-description">
+                        <div class="popular__box_product-price">
+                            <span class="pop_original-price">1 450 ₽</span>
+                            <span class="pop_discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="popular__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="popular__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="pop_rating">
+                            <div class="pop_stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular__box">
+                    <div class="popular__box-rate">
+                        <span class="popular">Популярный</span>
+
+                        <span class="pop_like">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="popular__box-img">
+                        <img
+                            src="/assets/imgs/news_product.svg"
+                            alt="Product"
+                        />
+                    </div>
+                    <div class="popular__box-description">
+                        <div class="popular__box_product-price">
+                            <span class="pop_original-price">1 450 ₽</span>
+                            <span class="pop_discounted-price">1 850 ₽</span>
+                        </div>
+                        <div class="popular__box_product-name">
+                            <span>Navy Blue Габа Улун</span>
+                        </div>
+                        <div class="popular__box_product-tip">
+                            <span>Черный чай т.е. категория</span>
+                        </div>
+                        <div class="pop_rating">
+                            <div class="pop_stars">
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star filled">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                            <span class="rating-count">(1200)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MARK:SEO -->
+        <section class="seo-news">
+            <div class="seo__title">Новости и записи для сео</div>
+            <div class="seo__card_boxes">
+                <div class="seo__card_box">
+                    <div class="seo__card_box-img">
+                        <img src="/assets/imgs/seo_img.svg" alt="Seo" />
+                    </div>
+                    <div class="seo__card_box-description">
+                        <div class="seo__dec-date">10.10.2022</div>
+                        <h4 class="seo__dec-title">
+                            Стерилизация и дезинфекция
+                        </h4>
+                        <p class="seo__dec-text">
+                            Стерилизация и дезинфекция — важные этапы обработки
+                            инструментов, позволяющие сделать любые...
+                        </p>
+                        <div class="seo__dec-link">
+                            <a href="#">Читать статью </a>
+                            <img src="/assets/imgs/arrow_right.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seo__card_box">
+                    <div class="seo__card_box-img">
+                        <img src="/assets/imgs/seo_img-2.svg" alt="Seo" />
+                    </div>
+                    <div class="seo__card_box-description">
+                        <div class="seo__dec-date">10.10.2022</div>
+                        <h4 class="seo__dec-title">
+                            Стерилизация и дезинфекция
+                        </h4>
+                        <p class="seo__dec-text">
+                            Стерилизация и дезинфекция — важные этапы обработки
+                            инструментов, позволяющие сделать любые...
+                        </p>
+                        <div class="seo__dec-link">
+                            <a href="#">Читать статью </a>
+                            <img src="/assets/imgs/arrow_right.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seo__card_box">
+                    <div class="seo__card_box-img">
+                        <img src="/assets/imgs/seo_img-3.svg" alt="Seo" />
+                    </div>
+                    <div class="seo__card_box-description">
+                        <div class="seo__dec-date">10.10.2022</div>
+                        <h4 class="seo__dec-title">
+                            Стерилизация и дезинфекция
+                        </h4>
+                        <p class="seo__dec-text">
+                            Стерилизация и дезинфекция — важные этапы обработки
+                            инструментов, позволяющие сделать любые...
+                        </p>
+                        <div class="seo__dec-link">
+                            <a href="#">Читать статью </a>
+                            <img src="/assets/imgs/arrow_right.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="seo__card_box">
+                    <div class="seo__card_box-img">
+                        <img src="/assets/imgs/seo_img-3.svg" alt="Seo" />
+                    </div>
+                    <div class="seo__card_box-description">
+                        <div class="seo__dec-date">10.10.2022</div>
+                        <h4 class="seo__dec-title">
+                            Стерилизация и дезинфекция
+                        </h4>
+                        <p class="seo__dec-text">
+                            Стерилизация и дезинфекция — важные этапы обработки
+                            инструментов, позволяющие сделать любые...
+                        </p>
+                        <div class="seo__dec-link">
+                            <a href="#">Читать статью </a>
+                            <img src="/assets/imgs/arrow_right.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MARK: FOOTER -->
+        <footer class="footer">
+            <div class="footer__title">ЧАЙНЫЙ ДОМ</div>
+            <div class="footer__container">
+                <div class="footer__social">
+                    <div class="footer__social_title">
+                        <span
+                            >Описание компании в несколько строк для
+                            примера</span
+                        >
+                        <span>
+                            <a href="#" class="number">
+                                <i class="fa-solid fa-phone"></i> 8 888 888 88
+                                88
+                            </a>
+                        </span>
+                    </div>
+                    <div class="footer__social_links">
+                        <span class="social__link_title">Мы в соц.сетях</span>
+                        <span>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="fa-brands fa-vk"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer__about_customers">
+                    <span>Покупателям</span>
+                    <div class="footer__customers_a">
+                        <a href="#">Оплата и доставка</a>
+                        <a href="#">Возврат товаров</a>
+                        <a href="#">Вопросы и ответы</a>
+                        <a href="#">Программа лояльностиs</a>
+                    </div>
+                </div>
+                <div class="footer__about_company">
+                    <span>О компании</span>
+                    <div class="footer__company_a">
+                        <a href="#">История</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+                <div class="footer__about_yuridik">
+                    <span>Юридическая информация</span>
+                    <div class="footer__yuridik_a">
+                        <a href="#">Реквизиты организации</a>
+                        <a href="#">Лицензии и сертификаты</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <span class="line"></span>
+            <div class="footer__copyright">
+                <span>teadom.ru &copy; все права защищены 2005-2022</span>
+            </div>
+        </footer>
+    </body>
+    <script src="/assets/js/script.js"></script>
+</html>
