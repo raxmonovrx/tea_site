@@ -62,6 +62,7 @@ a {
 .nav__links .nav__link-span {
     display: flex;
     gap: 5px;
+
 }
 .nav__links .nav__link-span span {
     display: flex;
@@ -83,6 +84,10 @@ a {
 .nav__socials a {
     color: #969696;
     font-size: 16px;
+
+    &:hover{
+      color: #33c445;
+    }
 }
 
 .menu {
